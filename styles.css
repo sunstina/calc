@@ -1,0 +1,172 @@
+body {
+    background-color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#astro {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    background: url(astro.png) no-repeat;
+    height: 700px;
+    width: 700px;
+}
+
+#main-header {
+    text-align: center;
+    margin: 25px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#controls {
+    margin: 0px auto;
+    margin-bottom: 35px;
+    width: 386px;
+}
+
+#date-input {
+    height: 30px;
+    width: 170px;
+    font-size: 120%;
+    text-align: center;
+    margin-right: 5px;
+    display: inline-block;
+
+}
+#calculate-button {
+    box-sizing: content-box;
+    height: 30px;
+    width: 150px;
+    vertical-align: bottom;
+    background: #91bf65;
+    border: 1px solid #91bf65;
+    /* border-radius: 14px; */
+    color: white;
+}
+
+.number {
+    color: black;
+    position: absolute;
+    font-size: 1.8em;
+    font-weight: 600;
+    width: 1.8em;
+    height: 1.6em;
+    padding-top: 8px;
+    text-align: center;
+    /* border: 1px solid coral; */
+}
+
+.invisible {
+    display: none !important;
+}
+
+#num1 {
+    left: 10px;
+    top: 10px;
+}
+
+#num2 {
+    left: 575px;
+    top: 10px;
+}
+
+#num3 {
+    left: 575px;
+    top: 575px;
+}
+
+#num4 {
+    left: 10px;
+    top: 575px;
+}
+
+#num5 {
+    left: 93px;
+    top: 97px;
+}
+
+#num6 {
+    left: 487px;
+    top: 97px;
+}
+
+#num7 {
+    left: 487px;
+    top: 490px;
+}
+
+#num8 {
+    left: 93px;
+    top: 490px;
+}
+
+#num9 {
+    left: 188px;
+    top: 188px;
+}
+
+#num10 {
+    left: 396px;
+    top: 188px;
+}
+
+#num11 {
+    left: 396px;
+    top: 396px;
+}
+
+#num12 {
+    left: 188px;
+    top: 396px;
+}
+
+#num13 {
+    left: 293px;
+    top: 295px;
+}
+
+#table {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact {
+    margin: 25px 0px;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #91bf65;
+    color: white;
+    font-size: 25px;
+    padding: 15px 40px;
+    border: 1px solid #91bf65;
+    border-radius: 14px;
+    margin: 5px;
+}
+
+.table-items {
+    min-width: 245px;
+    margin-left: 20px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.table-items > li.items-header {
+    text-align: center;
+    font-weight: 1000;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted grey;
+}
+
+.table-items > li {
+    list-style-type: none;
+    padding-left: 5px;
+}
