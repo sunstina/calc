@@ -39,13 +39,11 @@ function Calculate (day, month, year) {
 }
 
 function CalculateButtonOnClick () {
-    console.log(this, "clicked");
     let birth_date = document.getElementById('date-input').valueAsDate;
     let day = birth_date.getDate();
     let month = birth_date.getMonth() + 1;
     let year = birth_date.getFullYear();
 
-    console.log(day, month, year);
     Calculate(day, month, year);
 }
 
