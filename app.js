@@ -1,5 +1,6 @@
 function calcNum(number) {
-    return number === 22 ? 22 : number % 22;
+    let tmp = number % 22;
+    return tmp === 0 ? 22 : tmp;
 }
 
 function calcYear(year) {
