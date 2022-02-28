@@ -39,10 +39,6 @@ function Calculate (day, month, year) {
 }
 
 function CalculateButtonOnClick () {
-    // let birth_date = document.getElementById('date-input').valueAsDate;
-    // let day = birth_date.getDate();
-    // let month = birth_date.getMonth() + 1;
-    // let year = birth_date.getFullYear();
     let day = parseInt(document.getElementById('date-day').value);
     if ((day <= 0) || (day > 31)) { console.error("Wrong day"); return}
 
