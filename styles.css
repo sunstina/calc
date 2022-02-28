@@ -22,7 +22,24 @@ body {
 #controls {
     margin: 0px auto;
     margin-bottom: 35px;
-    width: 386px;
+    width: 486px;
+}
+
+.date-input {
+    /* height: 30px; */
+    font-size: 110%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#date-day, #date-month {
+    width: 60px;
+}
+
+#date-year {
+    width: 100px;
 }
 
 #date-input {
@@ -36,7 +53,7 @@ body {
 }
 #calculate-button {
     box-sizing: content-box;
-    height: 30px;
+    height: 32px;
     width: 150px;
     vertical-align: bottom;
     background: #91bf65;

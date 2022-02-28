@@ -39,25 +39,21 @@ function Calculate (day, month, year) {
 }
 
 function CalculateButtonOnClick () {
-    let birth_date = document.getElementById('date-input').valueAsDate;
-    let day = birth_date.getDate();
-    let month = birth_date.getMonth() + 1;
-    let year = birth_date.getFullYear();
+    // let birth_date = document.getElementById('date-input').valueAsDate;
+    // let day = birth_date.getDate();
+    // let month = birth_date.getMonth() + 1;
+    // let year = birth_date.getFullYear();
+    let day = parseInt(document.getElementById('date-day').value);
+    if ((day <= 0) || (day > 31)) { console.error("Wrong day"); return}
+
+    let month = parseInt(document.getElementById('date-month').value);
+    if ((month <= 0) || (month > 12)) { console.error("Wrong month"); return}
+
+    let year = parseInt(document.getElementById('date-year').value);
+    if ((year <= 0) || (year > 9999)) { console.error('Wrong year'); return}
 
     Calculate(day, month, year);
 }
 
-function set_today_max_value() {
-    let date_input = document.getElementById('date-input');
-    let now = new Date();
-    let month = now.getMonth() + 1;
-    if (month < 10) {
-        month = `0${month}`
-    }
-    date_input.setAttribute("max", `${now.getFullYear()}-${month}-${now.getDate()}`);
-    date_input.setAttribute("min", "1900-01-01");
-}
-
 let calc_button = document.getElementById('calculate-button');
 calc_button.addEventListener("click", CalculateButtonOnClick);
-set_today_max_value();
