@@ -36,7 +36,6 @@ function Calculate (day, month, year) {
     }
 
     document.getElementById('table').classList.remove('invisible');
-    document.getElementById('nresult').classList.remove('invisible');
 }
 
 function CalculateButtonOnClick () {
